@@ -1,0 +1,47 @@
+body {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+#chart-area svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.navbar {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#slider {
+	display: inline-block;
+	margin-left: 20px;
+	width: 100%;
+}
+
+label {
+	display: inline-block;
+	padding-left: 20px;
+}
+
+#year-slider {
+	display: inline-block;
+	width: 80%;
+	margin-left: 20px;
+}
+
+h3 {
+	margin: 0;
+}
+
+#chart-area {
+	margin-top: 25px;
+}
+
+#pie-button {
+	outline: 0;
+}
+
+.pie path{
+    stroke: white;
+    stroke-width: 1px;
+}

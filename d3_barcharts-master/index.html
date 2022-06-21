@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>US Demographics</title>
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <h1>US Demographics by State</h1>
+            </div>
+        </nav>
+        <div class="container">
+          <div id="selections" class="row">
+              <div class="col-md-2">
+                  <select id="measure-select" class="form-control">
+                      <option selected value="POPESTIMATE">Population</option>
+                      <option value="INTERNATIONALMIG">International Migrants</option>
+                      <option value="DOMESTICMIG">Domestic Migrants</option>
+                      <option value="NPOPCHG_">Population Change</option>
+                      <option value="BIRTHS">Births</option>
+                      <option value="DEATHS">Deaths</option>
+                  </select>
+              </div>
+              <div class="col-md-2">
+                <button id="pie-button" class="btn btn-primary">Pie Chart</button>
+              </div>
+              <div class="col-md-8">
+                <div id="slider">
+                  <div id="year-slider"></div>
+                  <label><h3 id="year">2011</h3></label>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap grid setup -->
+
+        <div class="row">
+            <div class="col-md-12">
+              <div id="chart-area"></div>
+            </div>
+        </div>
+
+    <!-- External JS libraries -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+    </body>
+</html>
